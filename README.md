@@ -12,7 +12,7 @@
 <h3 align="center"><u>FS22_CutterConverter</u></h3>
 
 <p align="center">
-    The CutterConverter overwrites `processCutterArea` method for a cutter and converts one fruit into another 1:1. It's good for WinterWheat -> Wheat conversion.
+    The CutterConverter overwrites the `processCutterArea` method for a cutter and converts one fruit into another 1:1. It's good for WinterWheat -> Wheat conversion.
 </p>
 
 </div>
