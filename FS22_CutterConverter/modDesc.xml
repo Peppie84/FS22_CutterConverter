@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="74">
+  <author>Peppie84</author>
+  <version>1.0.0.0</version>
+  <title>
+    <de>CutterConverter</de>
+  </title>
+  <description>
+    <de><![CDATA[
+                Konvertiert im Cutter von einer Frucht zu einer anderen
+            ]]></de>
+  </description>
+  <iconFilename>mod_icon.dds</iconFilename>
+  <multiplayer supported="true" />
+  <extraSourceFiles>
+    <sourceFile filename="src/main.lua" />
+  </extraSourceFiles>
+</modDesc>
