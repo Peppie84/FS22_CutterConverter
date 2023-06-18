@@ -6,6 +6,27 @@
 -- Copyright (c) Peppie84, 2023
 --
 
+---Mission00 is loading
+---@param mission table (Mission00)
+local function preload(mission)
+    print("Cutter convert preload")
+
+    local conversionFactor = 1
+    local windrowConversionFactor = 0
+
+    -- Convert WINTER_WHEAT to WHEAT
+    local winterWheatFruitTypeDesc  = g_fruitTypeManager:getFruitTypeByName('WINTER_WHEAT')
+    local wheatFillTypeDesc         = g_fillTypeManager:getFillTypeByName('WHEAT')
+    local winterWheatConverterIndex = g_fruitTypeManager:addFruitTypeConverter('WINTERWHEAT_CONVERTER', true)
+    g_fruitTypeManager:addFruitTypeConversion(winterWheatConverterIndex, winterWheatFruitTypeDesc.index, wheatFillTypeDesc.index, conversionFactor, windrowConversionFactor)
+
+    -- Convert WINTER_BARLEY to BARLEY
+    local winterBarleyFruitTypeDesc = g_fruitTypeManager:getFruitTypeByName('WINTER_BARLEY')
+    local barleyFillTypeDesc        = g_fillTypeManager:getFillTypeByName('BARLEY')
+    local winterBarleyConverterIndex = g_fruitTypeManager:addFruitTypeConverter('WINTERBARLEY_CONVERTER', true)
+    g_fruitTypeManager:addFruitTypeConversion(winterBarleyConverterIndex, winterBarleyFruitTypeDesc.index, barleyFillTypeDesc.index, conversionFactor, windrowConversionFactor)
+end
+
 ---Cutter.onLoad
 ---@param self table (cutter)
 ---@param savegame table
@@ -26,27 +47,6 @@ local function onLoad(self, savegame)
             spec.fruitTypeConverters[input] = converter
         end
     end
-end
-
----Mission00 is loading
----@param mission table (Mission00)
-local function preload(mission)
-    print("Cutter convert preload")
-
-    local conversionFactor = 1
-    local windrowConversionFactor = 1
-
-    -- Convert WINTER_WHEAT to WHEAT
-    local winterWheatFruitTypeDesc  = g_fruitTypeManager:getFruitTypeByName('WINTER_WHEAT')
-    local wheatFillTypeDesc         = g_fillTypeManager:getFillTypeByName('WHEAT')
-    local winterWheatConverterIndex = g_fruitTypeManager:addFruitTypeConverter('WINTERWHEAT_CONVERTER', true)
-    g_fruitTypeManager:addFruitTypeConversion(winterWheatConverterIndex, winterWheatFruitTypeDesc.index, wheatFillTypeDesc.index, conversionFactor, windrowConversionFactor)
-
-    -- Convert WINTER_BARLEY to BARLEY
-    local winterBarleyFruitTypeDesc = g_fruitTypeManager:getFruitTypeByName('WINTER_BARLEY')
-    local barleyFillTypeDesc        = g_fillTypeManager:getFillTypeByName('BARLEY')
-    local winterBarleyConverterIndex = g_fruitTypeManager:addFruitTypeConverter('WINTERBARLEY_CONVERTER', true)
-    g_fruitTypeManager:addFruitTypeConversion(winterBarleyConverterIndex, winterBarleyFruitTypeDesc.index, barleyFillTypeDesc.index, conversionFactor, windrowConversionFactor)
 end
 
 ---init()
