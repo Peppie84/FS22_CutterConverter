@@ -7,18 +7,20 @@
 <br />
 <div align="center">
 
-<img src="documents/mod_icon.jpg" style="width: 128px;">
+<img src="documents/icon_CutterConverter.jpg" style="width: 128px;">
 
 <h3 align="center"><u>FS22_CutterConverter</u></h3>
 
 <p align="center">
-    The CutterConverter overwrites the `processCutterArea` method for a cutter and converts one fruit into another 1:1. It's good for WinterWheat -> Wheat conversion.
+    The CutterConverter injects a new `fruitTypeConverter` for every Cutter-vehicle. It's used for<br />
+    - winter wheat => wheat<br />
+    - winter barley => barley<br />
 </p>
 
 </div>
 
 ## Credits
-* Sqeep
+* [Sqeep](https://github.com/Sqeep91)
 
 # Copyright
 Copyright (c) 2023 [Dennis Schmitt](https://github.com/peppie23).
