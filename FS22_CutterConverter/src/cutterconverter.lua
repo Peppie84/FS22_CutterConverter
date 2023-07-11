@@ -10,12 +10,12 @@ local cutterConverterData = {
     WINTERWHEAT_CONVERTER = {
         FROM_FRUIT = 'WINTER_WHEAT',
         TO_FRUIT = 'WHEAT',
-        CONVERSION = 1.2
+        CONVERSION_FACTOR = 1.2
     },
     WINTERBARLEY_CONVERTER = {
         FROM_FRUIT = 'WINTER_BARLEY',
         TO_FRUIT = 'BARLEY',
-        CONVERSION = 1.4
+        CONVERSION_FACTOR = 1.4
     }
 }
 
@@ -42,7 +42,7 @@ local function preload(mission)
             converterIndex,
             fromFruitTypeDesc.index,
             toFruitFillTypeDesc.index,
-            cutterConverterDesc.CONVERSION,
+            cutterConverterDesc.CONVERSION_FACTOR,
             windrowConversionFactor
         )
     end
