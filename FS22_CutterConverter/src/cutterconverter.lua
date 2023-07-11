@@ -4,6 +4,7 @@
 -- Main class for initialize the WinterX converters.
 --
 -- Copyright (c) Peppie84, 2023
+-- https://github.com/Peppie84/FS22_CutterConverter
 --
 local cutterConverterData = {
     WINTERWHEAT_CONVERTER = {
