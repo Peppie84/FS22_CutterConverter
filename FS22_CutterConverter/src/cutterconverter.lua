@@ -33,7 +33,7 @@ local function preload(mission)
         local fromFruitTypeDesc   = g_fruitTypeManager:getFruitTypeByName(cutterConverterDesc.FROM_FRUIT)
         local toFruitFillTypeDesc = g_fillTypeManager:getFillTypeByName(cutterConverterDesc.TO_FRUIT)
 
-        local converterIndex = g_fruitTypeManager:addFruitTypeConverter(
+        local converterIndex      = g_fruitTypeManager:addFruitTypeConverter(
             cutterConverterName,
             cutterConverterConstants.CONVERTER_IS_BASE_TYPE
         )
