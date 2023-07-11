@@ -7,9 +7,7 @@
 CutterConverter</de>
   </title>
   <description>
-    <de><![CDATA[
-Konvertiert im Cutter von einer Frucht zu einer anderen 1:1
-]]>    </de>
+    <de><![CDATA[Konvertiert im Cutter von einer Frucht zu einer anderen mit einer definierte konversion-rate]]></de>
   </description>
   <iconFilename>icon_CutterConverter.dds</iconFilename>
   <multiplayer supported="true" />
