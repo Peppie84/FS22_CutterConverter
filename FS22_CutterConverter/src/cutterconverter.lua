@@ -10,11 +10,13 @@ local cutterConverterData = {
     WINTERWHEAT_CONVERTER = {
         FROM_FRUIT = 'WINTER_WHEAT',
         TO_FRUIT = 'WHEAT',
+        RENAME_TO_FRUIT = 'Sommerweizen', -- i18n machen!
         CONVERSION_FACTOR = 1.2
     },
     WINTERBARLEY_CONVERTER = {
         FROM_FRUIT = 'WINTER_BARLEY',
         TO_FRUIT = 'BARLEY',
+        RENAME_TO_FRUIT = 'Sommergerste', -- i18n machen!
         CONVERSION_FACTOR = 1.4
     }
 }
@@ -33,7 +35,11 @@ local function preload(mission)
         local fromFruitTypeDesc   = g_fruitTypeManager:getFruitTypeByName(cutterConverterDesc.FROM_FRUIT)
         local toFruitFillTypeDesc = g_fillTypeManager:getFillTypeByName(cutterConverterDesc.TO_FRUIT)
 
-        local converterIndex      = g_fruitTypeManager:addFruitTypeConverter(
+        if cutterConverterDesc.RENAME_TO_FRUIT ~= nil then
+            toFruitFillTypeDesc.title = cutterConverterDesc.RENAME_TO_FRUIT
+        end
+
+        local converterIndex = g_fruitTypeManager:addFruitTypeConverter(
             cutterConverterName,
             cutterConverterConstants.CONVERTER_IS_BASE_TYPE
         )
