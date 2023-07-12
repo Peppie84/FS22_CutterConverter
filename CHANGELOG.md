@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
+- aktuell nichts
+
+## [1.2.0.0] - 2023-07-12
 - Added different conversion factors
     - Winterwheat = 1.2
     - Winterbarley = 1.4
