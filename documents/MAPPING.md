@@ -10,7 +10,7 @@
 **Step1**:
 We want to add the `WINTER_WHEAT` and `WINTER_BARLEY` to our fruittypes. Open your `map_fruittypes.xml` and add the winterwheat entry. It's up to you to adjust the values.
 
-> ⚠️ INFO ⚠️ If not present, than add it to your map. Copy the default from the `game-folder/data/maps` and add the file into your `map.xml`
+> ⚠️INFO: If not present, than add it to your map. Copy the default from the `game-folder/data/maps` and add the file into your `map.xml`
 
 ```xml
 <fruitType name="winter_wheat" shownOnMap="true" useForFieldJob="true">
@@ -57,10 +57,11 @@ Than you can close the `map_fruittypes.xml`.
 **Step3**:
 We also have to add the `WINTER_WHEAT` and `WINTER_BARLEY` to your filltypes. Open your `map_filltypes.xml` and add the following lines:
 
-> ⚠️ INFO ⚠️ If not present, than add it to your map. Copy the default from the `game-folder/data/maps` and add the file into your `map.xml`
+> ⚠️INFO: If not present, than add it to your map. Copy the default from the `game-folder/data/maps` and add the file into your `map.xml`
+> ⚠️INFO 2: Rename Wheat and Barley on this file to something like: Summer wheat & Summer barley
 
 ```xml
-<fillType name="WINTER_WHEAT" title="Winterweizen" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
+<fillType name="WINTER_WHEAT" title="Winter wheat" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
     <physics massPerLiter="0.78" maxPhysicalSurfaceAngle="15" />
     <economy pricePerLiter="0.337">
         <factors>
@@ -82,7 +83,7 @@ We also have to add the `WINTER_WHEAT` and `WINTER_BARLEY` to your filltypes. Op
     <pallet filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
     <textures diffuse="$data/fillPlanes/wheat_diffuse.png" normal="$data/fillPlanes/wheat_normal.png" specular="$data/fillPlanes/wheat_specular.png" distance="$data/fillPlanes/distance/wheatDistance_diffuse.png" />
 </fillType>
-<fillType name="WINTER_BARLEY" title="Wintergerste" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
+<fillType name="WINTER_BARLEY" title="Winter barley" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
     <physics massPerLiter="0.68" maxPhysicalSurfaceAngle="15" />
     <economy pricePerLiter="0.313">
         <factors>
@@ -121,7 +122,7 @@ Than you can close the `map_filltypes.xml`.
 **Step5**:
 You have to change the growth for wheat and barley and add the growth for the new fruits. Open your `map_growth.xml`. Just remove the full entry for wheat and barley and copy the following lines completely into your `map_growth.xml`.
 
-> ⚠️ INFO ⚠️ If not present, than add it to your map. Copy the default from the `game-folder/data/maps` and add the file into your `map.xml`
+> ⚠️INFO: If not present, than add it to your map. Copy the default from the `game-folder/data/maps` and add the file into your `map.xml`
 
 ```xml
 <fruit name="wheat" initialState="8">
