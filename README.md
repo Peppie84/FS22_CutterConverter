@@ -18,7 +18,6 @@
     The CutterConverter injects a new `fruitTypeConverter` for every Cutter-vehicle. It's used for<br />
     - winter wheat => wheat<br />
     - winter barley => barley<br />
-    It can also rename the old fruits to a new name like 'Summerwheat'.
 </p>
 
 </div>
