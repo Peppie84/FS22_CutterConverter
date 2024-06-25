@@ -21,6 +21,9 @@
 
 </div>
 
+## For Modders / Mappers
+- ### [Implement in your map](./documents/MAPPING.md)
+
 ## Credits
 * [Sqeep](https://github.com/Sqeep91)
 
