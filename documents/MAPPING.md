@@ -106,6 +106,8 @@ We also have to add the `WINTER_WHEAT` and `WINTER_BARLEY` to your filltypes. Op
     <textures diffuse ="$data/fillPlanes/barley_diffuse.png" normal="$data/fillPlanes/barley_normal.png" specular="$data/fillPlanes/barley_specular.png" distance="$data/fillPlanes/distance/barleyDistance_diffuse.png" />
 </fillType>
 ```
+> ℹ️ INFO: With `<image hud="...." />` you can change the normal fill icon with a fillicon + a small snow flake ;-)
+
 
 **Step4**:
 Scroll down to the `fillTypeCategories` section and add `WINTER_WHEAT` and `WINTER_BARLEY` to every category where wheat or barley is set.
@@ -377,6 +379,7 @@ On my map, the wheat has the file reference `301` and barley `303`.
     ...
 </FoliageMultiLayer>
 ```
+Now open the `map.i3d` with Giants Editor and click save and than you can close the editor.
 
 
 ## 2. Adding the converter to your map
