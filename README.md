@@ -15,7 +15,7 @@
 <h3 align="center"><u>FS22_CutterConverter</u></h3>
 
 <p align="center">
-    The CutterConverter injects a new `fruitTypeConverter` for every Cutter-vehicle. It's used for<br />
+    Enables cutter fruit converter via map, rather than per single cutter on their XMLs. This allows the mapper to incorporate crops such as: Winter wheat becomes wheat after threshing. Can be used for:<br />
     - winter wheat => wheat<br />
     - winter barley => barley<br />
 </p>
